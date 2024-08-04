@@ -117,6 +117,14 @@ For example, the script will split each image and mask of 1360x1024 pixels into 
 <hr>
 <table>
 <tr>
+<th>
+Image
+</th>
+<th>
+Mask
+</th>
+</tr>
+<tr>
 <td>
 <img src="./asset/10001-image.jpg" width="512" heigt="auto"><br>
 </td>
