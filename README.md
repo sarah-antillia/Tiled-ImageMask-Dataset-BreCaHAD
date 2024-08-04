@@ -65,7 +65,7 @@ lumen
 non_lumen
 </pre>
 For simplicity, we use <b>tumor</b> annotations only to create our mask image files.<br>
-The Case json file contains a list of center-like (x,y) point pairs for each class cells as shown below.<br>
+The Case json file contains a list of center-like (x,y) point for all cells belonging to the classes as shown below.<br>
 <b>Case json file:</b><br>
 <img src="./asset/json_annotation.png" width="640" height="auto"><br>
 <br>
