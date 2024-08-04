@@ -54,7 +54,7 @@ BreCaHAD: A Dataset for Breast Cancer Histopathological Annotation and Diagnosis
 <b>Case tif images:</b><br>
 <img src="./asset/images_sample.png" width="1024" height="auto"><br>
 <br>
-The groundTrue json annotation files contain the following classes:<br>
+The groundTruth json annotation files contain the following classes:<br>
 <pre>
 mitosis
 non_mitosis
@@ -70,7 +70,7 @@ The Case json file contains a list of center-like (x,y) point pairs for each cla
 <img src="./asset/json_annotation.png" width="640" height="auto"><br>
 <br>
 
-<h3>2.2 Generate BreCaHAD-master datasaet</h3> 
+<h3>2.2 Generate BreCaHAD-master dataset</h3> 
 Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">
 ImageMaskDatasetGenerator.py</a>.
 <br>
@@ -84,10 +84,10 @@ in ImageMaskDatasetGenerator.py.<br>
 </pre>
 
 The number of the original Tissue-images in BreCaHAD is only 162, and too small to use for a 
-training set of a segmentation model.Therefore, in order to increase of the number of the training data, 
+training set of a segmentation model. Therefore, in order to increase the number of the training data, 
 we applied the following data augmentation methods to the original set.<br>
-<li>hfip</li>
-<li>vflip</li>
+<li>horizontal flipping</li>
+<li>vertical flipping</li>
 <li>deformation</li>
 <li>distortion</li>
 <li>barrel_distortion</li>
@@ -95,7 +95,7 @@ we applied the following data augmentation methods to the original set.<br>
 <br>
 On more detail of these methods, please refer to <a href="./ImageMaskDatasetGenerator.py">ImageMaskDatasetGenerator.py</a>.<br>
 <br>
-<h3>2.3 Generate Tiled ImageMaskDataset </h3>
+<h3>2.3 Generate Tiled ImageMask Dataset </h3>
 
 Please run the following command for Python script <a href="./TiledImageMaskDatasetGenerator.py">
 TiledImageMaskDatasetGenerator.py</a>.
