@@ -114,7 +114,7 @@ Namely, this generates a mixed set of Tiled and Non-Tiled ImageMask datasets.<br
 </pre>
  
 For example, the script will split each image and mask of 1360x1024 pixels into six images and masks of 512x512 pixels.<br>
-<hr>
+
 <table>
 <tr>
 <th>
@@ -141,7 +141,7 @@ Mask
 </td>
 </td>
 </table>
-<hr>
+
 
 
 <br> 
