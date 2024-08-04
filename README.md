@@ -113,9 +113,9 @@ Namely, this generates a mixed set of Tiled and Non-Tiled ImageMask datasets.<br
 └─masks
 </pre>
  
-For example, the script will split an orginal 1360x1024 into six 512x512 tiles.<br>
+For example, the script will split an original 1360x1024 into six 512x512 tiles.<br>
 <hr>
-<img src="./asset/10001.jpg" width="800" heigt="auto"><br><br>
+<img src="./asset/10001.jpg" width="800" heigt="auto"><br>
 <img src="./asset/splitted_image_sample.png" width="800" heigt="auto"><br>
 <hr>
 
