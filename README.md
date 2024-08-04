@@ -111,9 +111,16 @@ Namely, this generates a mixed set of Tiled and Non-Tiled ImageMask datasets.<br
 ./Tiled-BreCaHAD-master
 ├─images
 └─masks
-
 </pre>
  
+For example, the script will split an orginal 1360x1024 into six 512x512 tiles.<br>
+<hr>
+<img src="./asset/10001.jpg" width="800" heigt="auto"><br><br>
+<img src="./asset/splitted_image_sample.png" width="800" heigt="auto"><br>
+<hr>
+
+
+<br> 
 <h3>2.4 Split master</h3>
 
 Pleser run the following command for Python <a href="./split_tiled_master.py">split_tiled_master.py</a> 
