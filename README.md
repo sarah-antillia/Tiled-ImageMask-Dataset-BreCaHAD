@@ -113,10 +113,26 @@ Namely, this generates a mixed set of Tiled and Non-Tiled ImageMask datasets.<br
 └─masks
 </pre>
  
-For example, the script will split an original 1360x1024 into six 512x512 tiles.<br>
+For example, the script will split each image and mask of 1360x1024 pixels into six images and masks of 512x512 pixels.<br>
 <hr>
-<img src="./asset/10001.jpg" width="800" heigt="auto"><br>
-<img src="./asset/splitted_image_sample.png" width="800" heigt="auto"><br>
+<table>
+<tr>
+<td>
+<img src="./asset/10001-image.jpg" width="512" heigt="auto"><br>
+</td>
+<td>
+<img src="./asset/10001-mask.jpg" width="512" heigt="auto"><br>
+</td>
+</tr>
+<tr>
+<td>
+<img src="./asset/splitted_image_sample.png" width="512" heigt="auto"><br>
+</td>
+<td>
+<img src="./asset/splitted_mask_sample.png" width="512" heigt="auto"><br>
+</td>
+</td>
+</table>
 <hr>
 
 
