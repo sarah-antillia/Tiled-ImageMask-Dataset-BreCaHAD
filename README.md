@@ -75,7 +75,7 @@ coordinates corresponding to each tissue image to create a mask file.
 We generated mask image files from (x, y) point-wise annotations by drawing filled circles with a constant radius 
 around the center-like (x, y) positions. 
 Consequently, the created mask dataset does not accurately represent the entire tumor region and can be considered a pseudo mask dataset.
-<br
+<br>
 
 <h3>2.2 Generate BreCaHAD-master dataset</h3> 
 Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">
