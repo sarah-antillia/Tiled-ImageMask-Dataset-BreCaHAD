@@ -65,10 +65,14 @@ lumen
 non_lumen
 </pre>
 For simplicity, we use <b>tumor</b> annotations only to create our mask image files.<br>
-The Case json file contains a list of center-like (x,y) point for all cells belonging to the classes as shown below.<br>
+The Case json file contains a list of center-like (x,y) points for all cells belonging to the classes as shown below.
+<br>
 <b>Case json file:</b><br>
 <img src="./asset/json_annotation.png" width="640" height="auto"><br>
 <br>
+As shown above, each x and y are normalized to take a value in range [0, 1.0], so you have to modify those values to actual (x, y) 
+coordinates corresponding to the image to create a mask file.
+
 
 <h3>2.2 Generate BreCaHAD-master dataset</h3> 
 Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">
