@@ -1,6 +1,6 @@
 <h2>Tiled-ImageMask-Dataset-BreCaHAD (2024/08/04)</h2>
 
-This is Tiled-ImageMask Dataset for BreCaHAD:A Dataset for Breast Cancer Histopathological Annotation and Diagnosis.<br>
+This is Tiled-ImageMask Dataset for BreCaHAD: A Dataset for Breast Cancer Histopathological Annotation and Diagnosis.<br>
 The dataset used here has been taken from the following web-site<br>
 <b>BreCaHAD: A Dataset for Breast Cancer Histopathological Annotation and Diagnosis</b><br>
 <br>
@@ -70,9 +70,12 @@ The Case json file contains a list of center-like (x,y) points for all cells bel
 <b>Case json file:</b><br>
 <img src="./asset/json_annotation.png" width="640" height="auto"><br>
 <br>
-As shown above, each x and y are normalized to take a value in range [0, 1.0], so you have to modify those values to actual (x, y) 
-coordinates corresponding to the image to create a mask file.
-
+As shown above, each x and y are normalized to take a value in range [0, 1.0], so you have to convert those values to actual (x, y) 
+coordinates corresponding to each tissue image to create a mask file. 
+We generated mask image files from (x, y) point-wise annotations by drawing filled circles with a constant radius 
+around the center-like (x, y) positions. 
+Consequently, the created mask dataset does not accurately represent the entire tumor region and can be considered a pseudo mask dataset.
+<br
 
 <h3>2.2 Generate BreCaHAD-master dataset</h3> 
 Please run the following command for Python script <a href="./ImageMaskDatasetGenerator.py">
